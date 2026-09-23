@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    gap: 20px;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("images/car.jpg");
+    background-size: cover;
+    background-position: center 68%;
+}
+.start a {
+    text-decoration: none;
+    color: black;
+    background-color: #F5B700;
+    padding: 13px 22px;
+    border-radius: 25px;
+}
+.start a:hover {
+  background-color: #F5F5F5;
+}
+.service-cards {
+     display: flex;
+     gap: 30px;
+     justify-content: center;
+}
+.service-card {
+    background-color: #1E1E1E;
+    padding: 15px;
+    border-radius: 20px;
+    width: 215px;
+    text-align: center;
+}
+.leistungen {
+    padding: 50px 35px;
+    text-align: center;
+}
+.leistungen h2 {
+    margin-bottom: 25px;
+}
+.preise {
+    text-align: center;
+    padding: 40px 35px;
+}
+.preise-list {
+    max-width: 500px;
+    margin: 30px auto;
+}
+.preise-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 12px;
+    border-bottom: 1px solid #3A3A3A;
+}
+.preise-item p {
+    color: #F5B700;
+}
+.kontakt {
+    text-align: center;
+    padding: 40px 30px;
+}
+.kontakt-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.kontakt h2 {
+    margin-bottom: 20px;
+}
+.kontakt a {
+    text-decoration: none;
+    color: #F5B700;
+}
+footer {
+    background-color: #1E1E1E;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    .service-cards {
+       flex-direction: column;
+       align-items: center;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px; 
+    }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+}
